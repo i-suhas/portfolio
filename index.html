@@ -1,81 +1,69 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>SUHAS B M</title>
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
 
-<body style="background-color: whitesmoke;">
-    <div class="loaderdiv" id="loaderdiv" style="display: none;">
-        <div class="loader"></div>
-    </div>
-    <nav class="navbar about_border" id="navbar1" style="display: flex;">
-        <h3>Welcome</h3>
-        <div class="navbar1">
-            <ul>
-               
-                <li><a href="#about">A b o u t</a></li>
-               
-            </ul>
-        </div>
-       
-    </nav>
-    <div class="navbar2" style="display: none;">
-        <ul>
-            <li><a href="#home">H o m e</a></li>
-            <li><a href="#about">A b o u t</a></li>
-            <li><a href="#projects">P r o j e c t s</a></li>
-            <li><a href="#experience">E x p e r i e n c e</a></li>
-            <li><a href="#awards">A w a r d s</a></li>
-        </ul>
-    </div>
-    <div class="container" id="container" style="display: block;">
-        <div class="home" id="home">
-            <h1 class="name">suhas B M</h1>
-            <div id="contact" class="contact">
-                <a href="mailto:suhasbm44@gmail.com" target="_blank" style="padding-top: 13px;"><img src="mail.png" alt="Email"></a>
-                <a href="https://www.linkedin.com/in/suhas-bm-007079256/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
-                <a href="https://github.com/i-suhas" target="_blank"><img src="github.png" alt="Github"></a>
-                <a href="tel:+916360302143" target="_blank"><img src="phone-call.png" alt="Phone"></a>
-            </div>
-            <div class="downloadresume">
-                <a href="https://docs.google.com/document/d/1a-AVaBuNvgtVRFqx8ADvDEih7gzZfs7r/edit?usp=sharing&ouid=108294437336199680600&rtpof=true&sd=true" download="Suhas B M">Resume</a>
-                <img src="download.png" alt="Download">
-            </div>
-      
-        </div>
-        <div class="about" id="about">
-            <div class="about_border">
-                <h2>
-                    Hi, this is Suhas B M!
-                </h2><br>
-                
-                <h2>
-                    Graduated in the field of AI & ML &amp; DATA ENTHUSIAST 🥲.
-                </h2><br>
-                <h1>skills</h1>
-                <h2>
-                    •Power BI • Matlab • Machine learning  • python • Data science 
-                </h2>
-            </div>
-                  <div class="project">
-        <h2><a href="https://traffic-sense.streamlit.app/">Traffic Sense</a></h2>
-        <p>AI-powered Smart Traffic Management System using Python and Streamlit to optimize signals and prioritize emergency vehicles.</p>
-    </div>
+        /* Loader */
+        .loaderdiv {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
 
-    <div class="project">
-        <h2><a href="https://github.com/i-suhas/Sign-language-interpreter">Beyond – Gestures</a></h2>
-        <p>Sign Language interpreter using OpenCV and MediaPipe to recognize ASL alphabets and facilitate communication.</p>
-    </div>
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+            align-items: center;
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .navbar ul li {
+            margin: 0 10px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .navbar ul li a:hover {
+            color: lightgray;
+        }
 
-    <div class="project">
-        <h2><a href="https://github.com/i-suhas/Student_data_analysis">Edu-Metrics</a></h2>
-        <p>An analytics-driven platform providing insights for informed decision-making in education and career planning.</p>
-    </div>
-
-        
-    <script src="index.js"></script>
-
-
-
-</body></html>
+        /* Sections */
+        .cont
