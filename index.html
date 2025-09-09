@@ -5,15 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Suhas B M - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Navbar -->
   <header>
-    <nav>
-      <div class="nav-container">
-        <a href="#about"><img src="por.png" alt="Logo" class="logo-img"></a>
-        <div class="logo">Suhas B M</div>
-      </div>
+    <nav class="navbar">
+      <div class="nav-brand">Suhas B M</div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
@@ -27,90 +25,109 @@
     </nav>
   </header>
 
-  <!-- About Section -->
-  <section id="about">
+  <!-- Hero Section -->
+  <section id="about" class="hero">
     <img src="DSC_8410 copy copy.JPG" alt="Suhas B M" class="profile-img">
-    <h1>Suhas B M</h1>
-    <p>AI & ML Graduate | Data Science Enthusiast | Software Developer</p>
-    <p><strong>Email:</strong> 📧 <a href="mailto:suhasbm44@gmail.com">suhasbm44@gmail.com</a> | 
-       <strong>Phone:</strong> 📱 <a href="tel:+916360302143">+91 6360302143</a></p>
+    <h1>Hi, I'm <span>Suhas B M</span></h1>
+    <p>AI & ML Graduate | Data Scientist | Software Developer</p>
+    <div class="hero-links">
+      <a href="mailto:suhasbm44@gmail.com" class="btn">📧 Email</a>
+      <a href="tel:+916360302143" class="btn">📱 Call</a>
+      <a href="https://github.com/i-suhas" target="_blank" class="btn">💻 GitHub</a>
+      <a href="https://www.linkedin.com/in/suhas-bm-007079256/" target="_blank" class="btn">🔗 LinkedIn</a>
+    </div>
   </section>
 
   <!-- Education -->
-  <section id="education">
+  <section id="education" class="section">
     <h2>Education</h2>
-    <div class="education">
-      <h3>B.E. in Artificial Intelligence & Machine Learning</h3>
-      <p>GM Institute of Technology, Karnataka (Dec 2020 – Jul 2024)</p>
+    <div class="card">
+      <h3>B.E. in AI & ML</h3>
+      <p>GM Institute of Technology, Karnataka (2020 – 2024)</p>
       <p><strong>CGPA:</strong> 8.0</p>
     </div>
-    <div class="education">
+    <div class="card">
       <h3>Credit Linked Data Science Program</h3>
-      <p>Daksh Gurukul, IIT Guwahati X NSDC (Jan 2025 – Present)</p>
+      <p>Daksh Gurukul, IIT Guwahati X NSDC (2025 – Present)</p>
     </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills">
+  <section id="skills" class="section">
     <h2>Skills</h2>
-    <p><strong>Programming & Tools:</strong> Python, Power BI, SQL, MATLAB, Java, Git</p>
-    <p><strong>AI/ML:</strong> Machine Learning, Deep Learning, NLP, Generative AI, Computer Vision, Data Analytics</p>
-    <p><strong>Software Development:</strong> Java, REST APIs, Web Development (HTML, CSS, JS)</p>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>Power BI</li>
+      <li>SQL</li>
+      <li>MATLAB</li>
+      <li>Java</li>
+      <li>Machine Learning</li>
+      <li>Deep Learning</li>
+      <li>NLP</li>
+      <li>Computer Vision</li>
+      <li>Generative AI</li>
+      <li>REST APIs</li>
+      <li>Web Development</li>
+    </ul>
   </section>
 
   <!-- Projects -->
-  <section id="projects">
+  <section id="projects" class="section">
     <h2>Projects</h2>
-    <div class="box">
-      <h3>Sign Language Interpreter</h3>
-      <p>Built with OpenCV & Mediapipe for ASL gesture-to-text recognition.</p>
-      <a href="https://github.com/i-suhas/Sign-language-interpreter" target="_blank">View on GitHub</a>
-    </div>
-    <div class="box">
-      <h3>Autism Prediction (VGG19 Model)</h3>
-      <p>Applied transfer learning on facial data with explainability using Grad-CAM.</p>
-    </div>
-    <div class="box">
-      <h3>RAG Knowledge Assistant</h3>
-      <p>Built a Retrieval-Augmented Generation pipeline with LangChain + FAISS.</p>
-    </div>
-    <div class="box">
-      <h3><a href="https://traffic-sense.streamlit.app/" target="_blank">Traffic Sense</a></h3>
-      <p>AI-powered Smart Traffic Management System with Streamlit dashboard.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Sign Language Interpreter</h3>
+        <p>Real-time ASL recognition with OpenCV & Mediapipe.</p>
+        <a href="https://github.com/i-suhas/Sign-language-interpreter" target="_blank" class="btn">View</a>
+      </div>
+      <div class="card">
+        <h3>Autism Prediction (VGG19)</h3>
+        <p>Transfer learning on facial data with Grad-CAM explainability.</p>
+      </div>
+      <div class="card">
+        <h3>RAG Knowledge Assistant</h3>
+        <p>Document Q&A pipeline using LangChain + FAISS.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://traffic-sense.streamlit.app/" target="_blank">Traffic Sense</a></h3>
+        <p>AI-powered Smart Traffic Management System.</p>
+      </div>
     </div>
   </section>
 
   <!-- Experience -->
-  <section id="experience">
+  <section id="experience" class="section">
     <h2>Experience</h2>
-    <div class="experience">
-      <h3>Cloud Counselage</h3>
-      <p>Data Analytics Intern (Oct 2024 – Jan 2025)</p>
-    </div>
-    <div class="experience">
-      <h3>OpenWeaver</h3>
-      <p>Generative AI Intern (Sep 2023 – Oct 2023)</p>
-    </div>
-    <div class="experience">
-      <h3>Sookshmas Pvt Ltd</h3>
-      <p>Java Full Stack Developer Intern (Nov 2021 – Apr 2022)</p>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Cloud Counselage</h3>
+        <p>Data Analytics Intern (Oct 2024 – Jan 2025)</p>
+      </div>
+      <div class="timeline-item">
+        <h3>OpenWeaver</h3>
+        <p>Generative AI Intern (Sep 2023 – Oct 2023)</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Sookshmas Pvt Ltd</h3>
+        <p>Java Full Stack Developer Intern (Nov 2021 – Apr 2022)</p>
+      </div>
     </div>
   </section>
 
   <!-- Certifications -->
-  <section id="certifications">
+  <section id="certifications" class="section">
     <h2>Certifications</h2>
     <ul>
       <li>Google – Technical Support Fundamentals</li>
       <li>AIbrain Inc – Automated Machine Learning</li>
       <li>FreeCodeCamp – Scientific Computing with Python</li>
-      <li>Meta (Coursera) – Back-End Development</li>
+      <li>Meta – Back-End Development</li>
       <li>Thirdeye Lab – AI Workshop on Crime Analytics</li>
     </ul>
   </section>
 
   <!-- Awards -->
-  <section id="awards">
+  <section id="awards" class="section">
     <h2>Awards & Honors</h2>
     <ul>
       <li>Toycathon Finalist – Team Leader, Forca-Alliance (2021)</li>
@@ -120,19 +137,18 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Me</h2>
+  <section id="contact" class="section">
+    <h2>Contact</h2>
     <div class="contact-icons">
-      <a href="mailto:suhasbm44@gmail.com" target="_blank"><img src="mail.png" alt="Email"></a>
-      <a href="https://www.linkedin.com/in/suhas-bm-007079256/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
-      <a href="https://github.com/i-suhas" target="_blank"><img src="github.png" alt="GitHub"></a>
-      <a href="tel:+916360302143" target="_blank"><img src="phone-call.png" alt="Phone"></a>
+      <a href="mailto:suhasbm44@gmail.com">📧</a>
+      <a href="https://github.com/i-suhas" target="_blank">💻</a>
+      <a href="https://www.linkedin.com/in/suhas-bm-007079256/" target="_blank">🔗</a>
+      <a href="tel:+916360302143">📱</a>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Suhas B M. All rights reserved.</p>
+    <p>&copy; 2025 Suhas B M | All Rights Reserved</p>
   </footer>
 </body>
 </html>
-
