@@ -1,149 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suhas B M - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="js/scripts.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suhas B M - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <header>
-        <nav>
-            <div class="nav-container">
-                <a href="index.html">
-                    <img src="por.png" alt="Portfolio Logo" class="logo-img">
-                </a>
-                <div class="logo">Suhas B M</div>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="nav-container">
+        <a href="#about"><img src="por.png" alt="Logo" class="logo-img"></a>
+        <div class="logo">Suhas B M</div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <img src="IMG_2566[1].jpg" alt="Suhas B M">
-        <h1>Suhas B M</h1>
-        <p>AI & ML Graduate | Data Enthusiast</p>
-        <p><strong>Skills:</strong> Power BI, Matlab, Machine Learning, Python, Data Science</p>
-    </section>
+  <!-- About Section -->
+  <section id="about">
+    <img src="IMG_2566[1].jpg" alt="Suhas B M" class="profile-img">
+    <h1>Suhas B M</h1>
+    <p>AI & ML Graduate | Data Science Enthusiast | Software Developer</p>
+    <p><strong>Email:</strong> 📧 <a href="mailto:suhasbm44@gmail.com">suhasbm44@gmail.com</a> | 
+       <strong>Phone:</strong> 📱 <a href="tel:+916360302143">+91 6360302143</a></p>
+  </section>
 
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        
-        <div class="education">
-            <h3>Dakshu Gurukul IIT Guwahati X NSDC</h3>
-            <p><strong>Course:</strong> Credit Linked Data Science Program (Jan 2025 - Present)</p>
-        </div>
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education">
+      <h3>B.E. in Artificial Intelligence & Machine Learning</h3>
+      <p>GM Institute of Technology, Karnataka (Dec 2020 – Jul 2024)</p>
+      <p><strong>CGPA:</strong> 8.0</p>
+    </div>
+    <div class="education">
+      <h3>Credit Linked Data Science Program</h3>
+      <p>Daksh Gurukul, IIT Guwahati X NSDC (Jan 2025 – Present)</p>
+    </div>
+  </section>
 
-        <div class="education">
-            <h3>G M Institute of Technology, Karnataka, IN</h3>
-            <p><strong>Degree:</strong> Bachelor of Engineering in AI & ML (2020 - 2024)</p>
-            <p><strong>CGPA:</strong> 7.66</p>
-        </div>
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <p><strong>Programming & Tools:</strong> Python, Power BI, SQL, MATLAB, Java, Git</p>
+    <p><strong>AI/ML:</strong> Machine Learning, Deep Learning, NLP, Generative AI, Computer Vision, Data Analytics</p>
+    <p><strong>Software Development:</strong> Java, REST APIs, Web Development (HTML, CSS, JS)</p>
+  </section>
 
-        <div class="education">
-            <h3>Rashtrotthana Vidya Kendra CBSE, Karnataka, IN</h3>
-            <p><strong>High School (2014 - 2018)</strong></p>
-            <p><strong>Percentage:</strong> 85.25%</p>
-        </div>
-
-
- <!-- Projects Section -->
- <section id="projects">
+  <!-- Projects -->
+  <section id="projects">
     <h2>Projects</h2>
-    
     <div class="box">
-        <h3><a href="https://traffic-sense.streamlit.app/" target="_blank">Traffic Sense</a></h3>
-        <p>AI-powered Smart Traffic Management System using Python and Streamlit.</p>
-        <p>Emergency vehicle adaptation in signal management.</p>
+      <h3>Sign Language Interpreter</h3>
+      <p>Built with OpenCV & Mediapipe for ASL gesture-to-text recognition.</p>
+      <a href="https://github.com/i-suhas/Sign-language-interpreter" target="_blank">View on GitHub</a>
     </div>
     <div class="box">
-        <h3><a href="https://github.com/i-suhas/Sign-language-interpreter" target="_blank">Beyond – Gestures</a></h3>
-        <p>Sign Language interpreter using OpenCV and MediaPipe.</p>
-        <p>Bridging the gap between hearing-impaired and common people.</p>
+      <h3>Autism Prediction (VGG19 Model)</h3>
+      <p>Applied transfer learning on facial data with explainability using Grad-CAM.</p>
     </div>
-
     <div class="box">
-        <h3><a href="https://github.com/i-suhas/Student_data_analysis" target="_blank">Edu-Metrics</a></h3>
-        <p>Analytics-driven platform for education insights.</p>
+      <h3>RAG Knowledge Assistant</h3>
+      <p>Built a Retrieval-Augmented Generation pipeline with LangChain + FAISS.</p>
     </div>
+    <div class="box">
+      <h3><a href="https://traffic-sense.streamlit.app/" target="_blank">Traffic Sense</a></h3>
+      <p>AI-powered Smart Traffic Management System with Streamlit dashboard.</p>
+    </div>
+  </section>
 
-</section>
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience">
+      <h3>Cloud Counselage</h3>
+      <p>Data Analytics Intern (Oct 2024 – Jan 2025)</p>
+    </div>
+    <div class="experience">
+      <h3>OpenWeaver</h3>
+      <p>Generative AI Intern (Sep 2023 – Oct 2023)</p>
+    </div>
+    <div class="experience">
+      <h3>Sookshmas Pvt Ltd</h3>
+      <p>Java Full Stack Developer Intern (Nov 2021 – Apr 2022)</p>
+    </div>
+  </section>
 
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Google – Technical Support Fundamentals</li>
+      <li>AIbrain Inc – Automated Machine Learning</li>
+      <li>FreeCodeCamp – Scientific Computing with Python</li>
+      <li>Meta (Coursera) – Back-End Development</li>
+      <li>Thirdeye Lab – AI Workshop on Crime Analytics</li>
+    </ul>
+  </section>
 
+  <!-- Awards -->
+  <section id="awards">
+    <h2>Awards & Honors</h2>
+    <ul>
+      <li>Toycathon Finalist – Team Leader, Forca-Alliance (2021)</li>
+      <li>Bronze Medal – VTU Judo Championship (2023)</li>
+      <li>3rd Place – State Powerlifting (2023)</li>
+    </ul>
+  </section>
 
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-icons">
+      <a href="mailto:suhasbm44@gmail.com" target="_blank"><img src="mail.png" alt="Email"></a>
+      <a href="https://www.linkedin.com/in/suhas-bm-007079256/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+      <a href="https://github.com/i-suhas" target="_blank"><img src="github.png" alt="GitHub"></a>
+      <a href="tel:+916360302143" target="_blank"><img src="phone-call.png" alt="Phone"></a>
+    </div>
+  </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience">
-            <h3>Cloud Counselage</h3>
-            <p><strong>Role:</strong> Data Analytics Intern (Oct 2024 - Jan 2025)</p>
-            <p>Analyzed student data for insights into education trends.</p>
-        </div>
-
-        <div class="experience">
-            <h3>OpenWeaver</h3>
-            <p><strong>Role:</strong> Generative AI Intern (Sep 2023 - Oct 2023)</p>
-            <p>Developed AI tools for content generation.</p>
-        </div>
-
-        <div class="experience">
-            <h3>Sookshmas Pvt Ltd</h3>
-            <p><strong>Role:</strong> Java Full Stack Developer Intern (Nov 2021 - Apr 2022)</p>
-            <p>Designed UI components for e-fashion management systems.</p>
-        </div>
-    </section>
-
-    <!-- Awards Section -->
-    <section id="awards">
-        <h2>Awards & Honors</h2>
-        <div class="award">
-            <h3>Bronze Medal - VTU Judo Championship</h3>
-            <p>VTU State Level (Feb 2023)</p>
-        </div>
-
-        <div class="award">
-            <h3>3rd Place - State Powerlifting</h3>
-            <p>State Level (Mar 2023)</p>
-        </div>
-
-        <div class="award">
-            <h3>Toycathon Finalist</h3>
-            <p>Team Leader, Forca-Alliance (Jan 2021)</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-icons">
-            <a href="mailto:suhasbm44@gmail.com" target="_blank"><img src="mail.png" alt="Email"></a>
-            <a href="https://www.linkedin.com/in/suhas-bm-007079256/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
-            <a href="https://github.com/i-suhas" target="_blank"><img src="github.png" alt="GitHub"></a>
-            <a href="tel:+916360302143" target="_blank"><img src="phone-call.png" alt="Phone"></a>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-    <footer>
-        <p>&copy; 2025 Suhas B M. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Suhas B M. All rights reserved.</p>
+  </footer>
 </body>
 </html>
